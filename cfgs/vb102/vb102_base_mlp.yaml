@@ -1,0 +1,24 @@
+arch_network_cfg:
+  arch_embedder_cfg:
+    dim: 34
+    task_mlp_schedule:
+      in_dim: 2048
+      out_dim: 32
+      hidden_dims: []
+      mlp_dropout: 0.1
+  arch_embedder_type: trans-vit-seq
+  compare_loss_type: margin_linear
+  compare_margin: 0.1
+  mlp_dropout: 0.1
+  mlp_hiddens: [200, 200]
+  optimizer:
+    lr: 0.001
+    type: Adam
+  scheduler: null
+arch_network_type: pointwise_comparator
+batch_size: 512
+choose_pair_criterion: random
+compare: true
+compare_threshold: 0.0
+epochs: 200
+max_compare_ratio: 4.0

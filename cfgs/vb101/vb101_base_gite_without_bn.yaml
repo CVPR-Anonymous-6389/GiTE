@@ -1,0 +1,35 @@
+arch_network_cfg:
+  arch_embedder_cfg:
+    info_dim: 32
+    op_dim: 32
+    num_input_emb: 3
+    num_head: 4
+    num_ratio: 4
+    num_depth: 3
+    depth: 16
+    use_mlp: true
+    use_bn: false
+    use_depth_emb: true
+    mlp_schedule:
+      in_dim: 1
+      out_dim: 32
+      hidden_dims: [200, 200]
+      mlp_dropout: 0.1
+    share_emb: false
+    share_emb_tf: false
+  arch_embedder_type: gite
+  compare_loss_type: margin_linear
+  compare_margin: 0.1
+  mlp_dropout: 0.1
+  mlp_hiddens: [200, 200]
+  optimizer:
+    lr: 0.001
+    type: Adam
+  scheduler: null
+arch_network_type: pointwise_comparator
+batch_size: 512
+choose_pair_criterion: random
+compare: true
+compare_threshold: 0.0
+epochs: 200
+max_compare_ratio: 4.0
