@@ -3,7 +3,7 @@
 
 Dear Reviewers, this is the cleaned code for submitting "GiTE: A Generic Vision Transformer Encoding Scheme for Efficient ViT Architecture Search".
 
-The training scripts are put under `scripts/`, and the implementation of TA-GATES is put under `my_nas/`. Besides, we also provide the training data (under `data/`) and configurations (under `cfgs/`) to enable the reproducibility. In the following parts, we will guide you to reproduce the experiments in our paper.
+The training scripts are put under `scripts/`, and the implementation of GiTE is put under `my_nas/`. Besides, we also provide the training data (under `data/`) and configurations (under `cfgs/`) to enable the reproducibility. In the following parts, we will guide you to reproduce the experiments in our paper.
 
 To install all requirements, run
 ```sh
